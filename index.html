@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK_DOM</title>
+</head>
+<body>
+    <label id="labelСlockD">Введите диаметр циферблата в пикселях:
+        <input type="number" id="clockD">
+    </label>
+    <input type='button' id="button" value='Построить часы' onclick='createСlock()'>
+
+    <svg id="clockSVG" xmlns="http://www.w3.org/2000/svg" display="none">
+        <circle id="clockFace" fill="#fcca66" />
+        <g id="clockHands">
+            <line id="hourHand" stroke-linecap="round" stroke="black"/> 
+            <line id="minuteHand" stroke-linecap="round" stroke="black"/>
+            <line id="secondHand" stroke-linecap="round" stroke="black"/>
+        </g>
+        <text id="digitalTime" text-anchor="middle" font-family="sans-serif"></text>
+    </svg>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
