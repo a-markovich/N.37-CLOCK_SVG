@@ -81,7 +81,7 @@ function createСlock() {
         number.setAttribute("fill","black");
         number.setAttribute("text-anchor","middle");
         number.setAttribute("x",`${numbersCenterX}px`);
-        number.setAttribute("y",`${numbersCenterY+radiusClockFace*0.12/2}px`);
+        number.setAttribute("y",`${numbersCenterY+radiusClockFace*0.12/2*0.75}px`);
         number.textContent=`${i}`;
         SVGElem.appendChild(number);
     }
@@ -110,8 +110,6 @@ function createСlock() {
     }
 
     currentTime();
-
-    setInterval(currentTime,1000);
 }
 
 
